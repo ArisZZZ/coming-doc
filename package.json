@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "start-storybook -p 6006",
-    "build": "build-storybook"
+    "build": "build-storybook -o ./build"
   },
   "dependencies": {
     "react": "^17.0.2",
