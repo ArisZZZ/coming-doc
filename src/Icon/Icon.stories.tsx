@@ -1,10 +1,10 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Button } from "coming";
+import { Icon } from "coming";
 
 export default {
-  title: "Button",
-  component: Button,
+  title: "Icon",
+  component: Icon,
   parameters: {
     docs: {
       description: {
@@ -12,20 +12,16 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof Icon>;
 
-const Template: ComponentStory<typeof Button> = (args) => (
-  <Button {...args}>{args.children}</Button>
-);
+const Template: ComponentStory<typeof Icon> = (args) => <Icon></Icon>;
 
 export const Default = Template.bind({});
 Default.args = {
   children: "默认",
-  type: "default",
 };
 
 export const Primary = Template.bind({});
 Primary.args = {
   children: "主要",
-  type: "danger",
 };
